@@ -1,0 +1,13 @@
+.voting {
+  font-size: x-large;
+}
+
+.plus-one {
+  width: 30px;
+  height: 30px;
+  background-color: azure;
+}
+
+img.plus-one:hover {
+  cursor: pointer;
+}

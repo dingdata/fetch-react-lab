@@ -6,6 +6,7 @@ class NewsFeed extends Component {
     super();
     this.state = {
       articles: [],
+      value: 0,
     };
   }
 
@@ -20,19 +21,13 @@ class NewsFeed extends Component {
         this.setState({ articles: responseBody.articles })
       )
       .catch((err) => console.log(err));
-    //console.log(this.state.articles);
-    // this.setState({ articles: responseBody.articles) }
-    // this.setState(responseBody);
   }
 
   render() {
-    //console.log(this.state.articles.articles);
-    //const { articles } = this.state;
     return this.state.articles.map((article, i) => (
       // TODO: start coding!
       <Article article={article}></Article>
     ));
-    //return this.state.articles;
   }
 }
 
